@@ -10,22 +10,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/bcb924b58e.js" crossorigin="anonymous"></script>
     <!-- DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Customize Design -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        'clifford': '#da373d',
+                        'pets-primary': '#FFDC26',
+                        'secondary': '#FFF9F4',
+                    }
+                }
             }
-          }
         }
-      </script>
-      <!-- styles -->
+    </script>
+    <!-- styles -->
     <style>
         .font-adlam-display {
             font-family: "ADLaM Display", serif;
@@ -37,14 +41,340 @@
     </style>
 </head>
 
-<body>
+<body class="font-sora">
     <!-- Header Section -->
     <header>
+        <!-- Navbar -->
+        <nav class="font-sora bg-[#FFF9F4]">
+            <div class="navbar max-w-screen-xl mx-auto">
+                <div class="navbar-start gap-2">
+                    <img src="./c1-assets/logo-header.png" alt="">
 
+                    <p class="hidden md:flex">Browse<span class="text-yellow-500">4</span>Pets</p>
+                </div>
+                <div class="navbar-center hidden md:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Find a pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-3 hidden md:flex">
+
+
+                    <i class="fa-regular fa-bell"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <button class="btn btn-outline btn-warning"><span class="text-black">Warning</span></button>
+                    <button class="btn btn-accent bg-yellow-300">Button</button>
+
+                </div>
+                <div class="flex flex-1 justify-end px-2 md:hidden">
+                    <div class="flex items-stretch">
+
+                        <div class="dropdown dropdown-end">
+                            <div tabindex="0" role="button" class="btn btn-ghost rounded-btn"><i
+                                    class="fa-solid fa-bars"></i></div>
+                            <ul tabindex="0"
+                                class="menu dropdown-content bg-base-100 rounded-box z-[1] mt-4 w-52 p-2 shadow">
+                                <li><a>Find a pet</a></li>
+                                <li><a>Breeds</a></li>
+                                <li><a>Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class=" flex flex-col-reverse md:relative  max-w-screen-xl mx-auto">
+
+            <img class=" absolute -bottom-60 md:bottom-0 md:relative -z-10 " src="./c1-assets/cat-big.png" alt="">
+            <div class="md:absolute md:inset-0  space-y-3 bottom-">
+                <h2 class="font-adlam-display text-3xl lg:text-6xl  font-bold">Pamper Your Pet, <br>Because They Deserve
+                    <br> the Bes
+                </h2>
+                <p class="text-lg md:text-2xl pets-primary">Discover a world of treats, toys, and <br class="md:hidden">
+                    essentials
+                    handpicked for <br class="hidden md:flex"> your furry <br class="md:hidden"> friends. Shop now and
+                    make tails wag with joy!</p>
+                <button class="btn btn-accent bg-yellow-300">Find a pet</button>
+            </div>
+        </div>
+        <section class="max-w-screen-xl mx-auto mt-40">
+            <h2 class="font-adam-display text-2xl md:text-4xl font-bold">Browse By Categories</h2>
+            <!-- Parent Div -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2">
+                <div class="card bg-[#F9DF8A] w-54 h-53 my-2 flex justify-center align-center space-y-7 mt-4 pt-4">
+                    <div class="avatar placeholder flex justify-center align-center space-y-5  ">
+                        <div class="bg-white text-neutral-content  w-24 rounded-full mb-5">
+                            <span class="text-3xl "><img src="./c1-assets/dog-cartoon.png" alt=""></span>
+                        </div>
+                    </div>
+                    <h2 class="font-bold text-xl text-center">Dog</h2>
+                    <p class="text-center text-lg pb-6">3 items</p>
+                </div>
+                <div class="card bg-[#F9DF8A] w-54 h-53 my-2 flex justify-center align-center space-y-7 mt-4 pt-4">
+                    <div class="avatar placeholder flex justify-center align-center space-y-5  ">
+                        <div class="bg-white text-neutral-content  w-24 rounded-full mb-5">
+                            <span class="text-3xl "><img src="./c1-assets/cat-cartoon.png" alt=""></span>
+                        </div>
+                    </div>
+                    <h2 class="font-bold text-xl text-center">Cat</h2>
+                    <p class="text-center text-lg pb-6">3 items</p>
+                </div>
+                <div class="card bg-[#F9DF8A] w-54 h-53 my-2 flex justify-center align-center space-y-7 mt-4 pt-4">
+                    <div class="avatar placeholder flex justify-center align-center space-y-5  ">
+                        <div class="bg-white text-neutral-content  w-24 rounded-full mb-5">
+                            <span class="text-3xl "><img src="./c1-assets/bird-cartoon.png" alt=""></span>
+                        </div>
+                    </div>
+                    <h2 class="font-bold text-xl text-center">Birds</h2>
+                    <p class="text-center text-lg pb-6">3 items</p>
+                </div>
+                <div class="card bg-[#F9DF8A] w-54 h-53 my-2 flex justify-center align-center space-y-7 mt-4 pt-4">
+                    <div class="avatar placeholder flex justify-center align-center space-y-5  ">
+                        <div class="bg-white text-neutral-content  w-24 rounded-full mb-5">
+                            <span class="text-3xl "><img src="./c1-assets/fish-cartoon.png" alt=""></span>
+                        </div>
+                    </div>
+                    <h2 class="font-bold text-xl text-center">Fish</h2>
+                    <p class="text-center text-lg pb-6">3 items</p>
+                </div>
+
+                <div class="card bg-[#F9DF8A] w-54 h-53 my-2 flex justify-center align-center space-y-7 mt-4 pt-4">
+                    <div class="avatar placeholder flex justify-center align-center space-y-5  ">
+                        <div class="bg-white text-neutral-content  w-24 rounded-full mb-5">
+                            <span class="text-3xl "><img src="./c1-assets/mouse-cartoon.png" alt=""></span>
+                        </div>
+                    </div>
+                    <h2 class="font-bold text-xl text-center">Small pet</h2>
+                    <p class="text-center text-lg pb-6">3 items</p>
+                </div>
+                <div class="card bg-[#F9DF8A] w-54 h-53 my-2 flex justify-center align-center space-y-7 mt-4 pt-4">
+                    <div class="avatar placeholder flex justify-center align-center space-y-5  ">
+                        <div class="bg-white text-neutral-content  w-24 rounded-full mb-5">
+                            <span class="text-3xl "><img src="./c1-assets/rabbit-cartoon.png" alt=""></span>
+                        </div>
+                    </div>
+                    <h2 class="font-bold text-xl text-center">Rabit</h2>
+                    <p class="text-center text-lg pb-6">3 items</p>
+                </div>
+            </div>
+        </section>
     </header>
-    <!-- Main Section -->
     <main>
+        <!-- Trending section -->
+        <!-- bg-secondary -->
+        <section class=" my-24">
+            <div class="max-w-screen-xl mx-auto">
+                <h2 class="font-adam-display text-2xl md:text-4xl font-bold mb-6">Trending Pet Products</h2>
+                <div class=" flex gap-2 ">
+                    <!-- left side -->
+                    
+                        <div class="flex flex-col bg-secondary">
+                            <div>
+                                <h4 class="font-adlam-display text-2xl font-bold">T- Shirt For Dogs
+                                </h2>
+                                <p class="text- md:text-md pets-primary">Discover a world of treats, toys, and
+                                    <br>essentials
+                                    handpicked for
+                                </p>
+                                <button class="btn btn-accent bg-yellow-300">Shop Now</button>
+                            </div>
+                                <div>
+                                    <img class="ml-20  -mt-32" src="./c1-assets/cute-pet-small.png" alt=""> 
+                                </div>
+                        </div>
+                    
+            
+                    <!-- right side -->
+                    <div class="grid  grid-cols-2  md:grid-cols-[305px,305px,305px] gap-5 mx-auto">
+                        <div class="flex items-center bg-blue-300  ">
 
+                            <div class="avatar placeholder">
+                                <div class="bg-secondary text-neutral-content w-24 rounded">
+                                    <span class="text-3xl"><img src="./c1-assets/dog-cartoon.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="rating rating-md gap-2">
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-amber-300" />
+                                    <p class="text-lg">4.5</p>
+                                </div>
+
+                                <div>
+                                    <h4>Pet Bed</h4>
+                                    <h4>$39.99</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="flex items-center bg-blue-300 ">
+
+                            <div class="avatar placeholder">
+                                <div class="bg-secondary text-neutral-content w-24 rounded">
+                                    <span class="text-3xl"><img src="./c1-assets/dog-cartoon.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="rating rating-md gap-2">
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-amber-300" />
+                                    <p class="text-lg">4.5</p>
+                                </div>
+
+                                <div>
+                                    <h4>Pet Bed</h4>
+                                    <h4>$39.99</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="flex items-center bg-blue-300 ">
+
+                            <div class="avatar placeholder">
+                                <div class="bg-secondary text-neutral-content w-24 rounded">
+                                    <span class="text-3xl"><img src="./c1-assets/dog-cartoon.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="rating rating-md gap-2">
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-amber-300" />
+                                    <p class="text-lg">4.5</p>
+                                </div>
+
+                                <div>
+                                    <h4>Pet Bed</h4>
+                                    <h4>$39.99</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="flex items-center bg-blue-300 ">
+
+                            <div class="avatar placeholder">
+                                <div class="bg-secondary text-neutral-content w-24 rounded">
+                                    <span class="text-3xl"><img src="./c1-assets/dog-cartoon.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="rating rating-md gap-2">
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-amber-300" />
+                                    <p class="text-lg">4.5</p>
+                                </div>
+
+                                <div>
+                                    <h4>Pet Bed</h4>
+                                    <h4>$39.99</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="flex items-center bg-blue-300 ">
+
+                            <div class="avatar placeholder">
+                                <div class="bg-secondary text-neutral-content w-24 rounded">
+                                    <span class="text-3xl"><img src="./c1-assets/dog-cartoon.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="rating rating-md gap-2">
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-amber-300" />
+                                    <p class="text-lg">4.5</p>
+                                </div>
+
+                                <div>
+                                    <h4>Pet Bed</h4>
+                                    <h4>$39.99</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="flex items-center bg-blue-300 ">
+
+                            <div class="avatar placeholder">
+                                <div class="bg-secondary text-neutral-content w-24 rounded">
+                                    <span class="text-3xl"><img src="./c1-assets/dog-cartoon.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="rating rating-md gap-2">
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-amber-300" />
+                                    <p class="text-lg">4.5</p>
+                                </div>
+
+                                <div>
+                                    <h4>Pet Bed</h4>
+                                    <h4>$39.99</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="flex items-center bg-blue-300 ">
+
+                            <div class="avatar placeholder">
+                                <div class="bg-secondary text-neutral-content w-24 rounded">
+                                    <span class="text-3xl"><img src="./c1-assets/dog-cartoon.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="rating rating-md gap-2">
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-amber-300" />
+                                    <p class="text-lg">4.5</p>
+                                </div>
+
+                                <div>
+                                    <h4>Pet Bed</h4>
+                                    <h4>$39.99</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="flex items-center bg-blue-300 ">
+
+                            <div class="avatar placeholder">
+                                <div class="bg-secondary text-neutral-content w-24 rounded">
+                                    <span class="text-3xl"><img src="./c1-assets/dog-cartoon.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="rating rating-md gap-2">
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-amber-300" />
+                                    <p class="text-lg">4.5</p>
+                                </div>
+
+                                <div>
+                                    <h4>Pet Bed</h4>
+                                    <h4>$39.99</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="md:flex hidden items-center bg-blue-300 ">
+
+                            <div class="avatar placeholder">
+                                <div class="bg-secondary text-neutral-content w-24 rounded">
+                                    <span class="text-3xl"><img src="./c1-assets/dog-cartoon.png" alt=""></span>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="rating rating-md gap-2">
+                                    <input type="radio" name="rating-7" class="mask mask-star-2 bg-amber-300" />
+                                    <p class="text-lg">4.5</p>
+                                </div>
+
+                                <div>
+                                    <h4>Pet Bed</h4>
+                                    <h4>$39.99</h4>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
     <!-- Footer Section -->
     <footer>
