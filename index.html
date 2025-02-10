@@ -47,7 +47,7 @@
     <!-- Header Section -->
     <header>
         <!-- Navbar -->
-        <nav class="font-sora bg-[#FFF9F4]">
+        <nav class="font-sora bg-[#FFF9F4] border border-b-black md:border-none">
             <div class="navbar max-w-screen-lg mx-auto">
                 <div class="navbar-start gap-2">
                     <img src="./c1-assets/logo-header.png" alt="">
@@ -90,8 +90,8 @@
         <!-- Banner -->
         <section class=" flex flex-col-reverse md:relative max-w-screen-xl  md:max-w-screen-lg mx-auto">
 
-            <img class=" absolute -bottom-20 md:bottom-0 md:relative -z-10 " src="./c1-assets/cat-big.png" alt="">
-            <div class="md:absolute md:inset-0  space-y-3  ">
+            <img class=" absolute -bottom-20 md:bottom-0 md:relative z-0 " src="./c1-assets/cat-big.png" alt="">
+            <div class="md:absolute md:inset-0 z-10 space-y-3  ">
                 <h2 class="font-adlam-display text-3xl md:text-4xl animate-bounce mt-20  font-bold">Pamper Your Pet,
                     <br>Because They Deserve
                     <br> the Bes
@@ -167,44 +167,17 @@
             </div>
         </section>
 
-            <h4 class="font-adam-display text-2xl max-w-screen-lg  mx-automd:text-4xl font-bold mb-6">Everyday Low Price</h4>
-            <div class="max-w-screen-xl md:max-w-screen-lg mx-auto grid grid-cols-3 gap-5">
-                <div class=" flex bg-gradient-to-br from-[#FFF9F4] to-[#F9DF8A] h-[350px]  rounded-lg">
-                    <div class="pl-10">
-                        <h1 class="font-adlam-display text-md md:text-xl font-bold pt-20 ">Pet Grooming Mitt</h1>
-                        <h2 class=" text-3xl md:text-4xl text-pets-primary font-bold mt-10">$7.99</h2>
-
-                    </div>
-                    <img class="h-[300px] " src="./c1-assets/Chinese Crested.jpg" alt="">
-                </div>
-                <div class=" flex bg-gradient-to-br from-[#FFF9F4] to-[#F9DF8A] h-[350px]  rounded-lg">
-                    <div class="pl-10">
-                        <h1 class="font-adlam-display text-md md:text-xl font-bold pt-20 ">Pet Grooming Mitt</h1>
-                        <h2 class=" text-3xl md:text-4xl text-pets-primary font-bold mt-10">$7.99</h2>
-
-                    </div>
-                    <img class="h-[300px] " src="./c1-assets/Savannah .jpg" alt="">
-                </div>
-                <div class=" flex bg-gradient-to-br from-[#FFF9F4] to-[#F9DF8A] h-[350px]  rounded-lg">
-                    <div class="pl-10">
-                        <h1 class="font-adlam-display text-md md:text-xl font-bold pt-20 ">Pet Grooming Mitt</h1>
-                        <h2 class=" text-3xl md:text-4xl text-pets-primary font-bold mt-10">$7.99</h2>
-
-                    </div>
-                    <img class="h-[300px] " src="./c1-assets/Tibetan Mastiff.jpg" alt="">
-                </div>
-            </div>
-        </section> -->
+            
     </header>
     <main>
         <!-- Trending section -->
         <section class=" my-24 md:bg-secondary py-24 ">
             <div class="max-w-screen-xl md:max-w-screen-lg mx-auto">
                 <h2 class="font-adam-display text-2xl md:text-4xl font-bold mb-6">Trending Pet Products</h2>
-                <div class="  flex-row md:flex space-y-16 md:space-y-5  ">
+                <div class="  flex-row md:flex space-y-10 md:space-y-0 md:space-x-6 items-stretch ">
                     <!-- left side -->
 
-                    <div class="flex flex-col bg-[#F9DF8A] rounded-lg p-5 pb-0 ">
+                    <div class="flex flex-col bg-[#F9DF8A] rounded-lg p-5  h-full ">
                         <div class="space-y-2">
                             <h4 class="font-adlam-display text-2xl font-bold">T- Shirt For Dogs
                                 </h2>
@@ -212,17 +185,18 @@
                                     <br>essentials
                                     handpicked for
                                 </p>
-                                <button class="btn btn-accent w-32  bg-white">Shop Now</button>
+                                <button class="btn btn-accent w-30  bg-white">Shop Now</button>
                         </div>
-                        <div>
-                            <img class="ml-44 md:ml-20 -mt-32 " src="./c1-assets/cute-pet-small.png" alt="">
+                        <!-- mt-auto -->
+                        <div class="mt-auto">
+                            <img class="ml-44 md:ml-20 -mt-28 " src="./c1-assets/cute-pet-small.png" alt="">
                         </div>
                     </div>
 
 
                     <!-- right side -->
-                    <div class="grid  grid-cols-2  md:grid-cols-3 gap-10 mx-auto ml-5">
-                        <div class="flex items-center bg-white gap-2 w-[200px]">
+                    <div class="grid  grid-cols-2  md:grid-cols-3 gap-10 mx-auto ml-5 h-full ">
+                        <div class="flex items-center bg-white gap-2 w-[200px] h-full">
 
                             <div class="avatar placeholder">
                                 <div class="bg-secondary text-neutral-content w-24 rounded-lg">
@@ -242,7 +216,7 @@
                             </div>
 
                         </div>
-                        <div class="flex items-center bg-white gap-2 w-[200px]">
+                        <div class="flex items-center bg-white gap-2 w-[200px] h-full">
 
                             <div class="avatar placeholder">
                                 <div class="bg-secondary text-neutral-content w-24 rounded">
@@ -262,7 +236,7 @@
                             </div>
 
                         </div>
-                        <div class="flex items-center bg-white gap-2 w-[200px]">
+                        <div class="flex items-center bg-white gap-2 w-[200px] h-full">
 
                             <div class="avatar placeholder">
                                 <div class="bg-secondary text-neutral-content w-24 rounded">
@@ -282,7 +256,7 @@
                             </div>
 
                         </div>
-                        <div class="flex items-center bg-white gap-2 w-[200px]">
+                        <div class="flex items-center bg-white gap-2 w-[200px] h-full">
 
                             <div class="avatar placeholder">
                                 <div class="bg-secondary text-neutral-content w-24 rounded">
@@ -302,7 +276,7 @@
                             </div>
 
                         </div>
-                        <div class="flex items-center bg-white gap-2 w-[200px]">
+                        <div class="flex items-center bg-white gap-2 w-[200px] h-full">
 
                             <div class="avatar placeholder">
                                 <div class="bg-secondary text-neutral-content w-24 rounded">
@@ -322,7 +296,7 @@
                             </div>
 
                         </div>
-                        <div class="flex items-center bg-white gap-2 w-[200px] ">
+                        <div class="flex items-center bg-white gap-2 w-[200px] h-full ">
 
                             <div class="avatar placeholder">
                                 <div class="bg-secondary text-neutral-content w-24 rounded">
@@ -342,7 +316,7 @@
                             </div>
 
                         </div>
-                        <div class="flex items-center bg-white gap-2 w-[200px]">
+                        <div class="flex items-center bg-white gap-2 w-[200px] h-full">
 
                             <div class="avatar placeholder">
                                 <div class="bg-secondary text-neutral-content w-24 rounded">
@@ -362,7 +336,7 @@
                             </div>
 
                         </div>
-                        <div class="flex items-center bg-white gap-2 w-[200px]">
+                        <div class="flex items-center bg-white gap-2 w-[200px] h-full">
 
                             <div class="avatar placeholder">
                                 <div class="bg-secondary text-neutral-content w-24 rounded">
@@ -382,7 +356,7 @@
                             </div>
 
                         </div>
-                        <div class="md:flex hidden items-center bg-white gap-2 w-[200px]">
+                        <div class="md:flex hidden items-center bg-white gap-2 w-[200px] h-full">
 
                             <div class="avatar placeholder">
                                 <div class="bg-secondary text-neutral-content w-24 rounded">
@@ -442,12 +416,12 @@
         </section>
         <!-- Awesome News -->
 
-        <section
-            class="relative -bottom-[230px] md:-bottom-[250px] max-w-screen-lg rounded-lg mx-auto md:flex bg-[#FFF9F4] h-[700px] md:h-[500px] z-10">
+        <section class="relative -bottom-[230px] md:-bottom-[250px] max-w-screen-lg rounded-lg mx-auto md:flex bg-[#FFF9F4] h-[700px] md:h-[500px] z-10">
+           
 
             <!-- left -->
             <div>
-                <img class="md:py-10 md:pl-24 md:pr-48 mx-auto md:mx-0" src="./c1-assets/cute-pet-mid.png" alt="">
+                <img class="md:py-10 md:pl-24 md:pr-48 mx-auto md:mx-0 " src="./c1-assets/cute-pet-mid.png" alt="">
             </div>
             <!-- right -->
             <div class="flex items-center ">
@@ -459,8 +433,9 @@
                     <button class="btn btn-warning">Subscribe</button>
                 </div>
             </div>
-
+         
         </section>
+        
     </main>
     <!-- Footer Section -->
 
@@ -469,20 +444,19 @@
 
         </div>
         <div>
-            <div class=" max-w-screen-lg sm:flex md:flex-row sm:justify-between mx-auto mt-20 md:mt-0">
-                <div class=" gap-2 flex flex-col">
+            <div class=" max-w-screen-lg sm:flex md:flex-row sm:justify-between mx-auto mt-20 md:mt-0 space-y-10 md:space-y-5 ">
+                <div class=" gap-5 flex flex-col">
 
 
-                    <div class=" flex items-center">
+                    <div class=" flex items-center ">
                         <img class=" " src="./c1-assets/logo-footer.png" alt="">
-
-                        <p class=" ">Browse<span class="text-[#F9DF8A]">4</span>Pets</p>
+                        <p class="flex">Browse<span class="text-yellow-500">4</span>Pets</p>
                     </div>
-
+                    
                     <p>Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
 
                 </div>
-                <div class="flex flex-col space-y-5">
+                <div class="flex flex-col space-y-2 md:space-y-5">
 
                     <a>Find a pet</a>
                     <a>Breeds</a>
@@ -490,17 +464,19 @@
 
                 </div>
 
-                <div class="flex flex-col">
+                <div class="flex items-end ">
 
-                    <h6 class="footer-title">Follow Us</h6>
+                  <div class="">
+                    <h6 class="font-bold">Follow Us</h6>
 
-                    <div class=" ">
+                    <div class="space-x-3">
                         <a href=""><i class="fa-brands fa-facebook"></i></a>
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href=""><i class="fa-brands fa-linkedin rounded-full"></i></a>
                         <a href=""><i class="fa-brands fa-youtube"></i></a>
                     </div>
 
+                  </div>
                 </div>
             </div>
 
